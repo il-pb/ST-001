@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 28px; 
+    font-weight: 400;
+}
+
+.nav{
+    display: flex;
+    width: calc(100% - 64px);
+    height: 220px;
+    margin: 48px 32px;
+}
+
+.company{
+    width: 20%;
+}
+
+.logo{
+    display: flex;
+}
+
+.logomark{
+    background-color: #EC4883;
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+    border: none;
+    border-radius: 50px;
+}
+
+.logo-img{
+    height: 40px;
+}
+
+.white-color-change{
+    filter: invert(100%) sepia(95%) saturate(0%) hue-rotate(75deg) brightness(101%) contrast(101%);
+}
+
+.logo-text{
+    margin-left: 8px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 8px 0;
+    color: #0F172A;
+}
+
+.tagline{
+    color: #646F8B;
+}
+
+.columns{
+    width: 80%;
+    display: flex;
+}
+
+.column{
+    width: 25%;
+    color: #475169;
+}
+
+.category{
+    font-size: 14px;
+    line-height: 20px;
+    color: #0F172A;
+}
+
+.social{
+    display: flex;
+    width: calc(100% - 64px);
+    padding: 20px 32px;
+    background-color: #F1F3F9;
+}
+
+.copyright{
+    color: #646F8B;
+    width: 50%;
+}
+
+.social-links{
+    width: 50%;
+    text-align: end;
+}
+
+.grey-color-change{
+    filter: invert(49%) sepia(4%) saturate(2466%) hue-rotate(186deg) brightness(85%) contrast(84%);
+}
+.icons{
+    width: 20px;
+    height: 20px;
+    padding: 0 8px;
+}
+
+@media (max-width: 480px) {
+    body{
+        text-align: center;
+    }
+
+    .nav{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .company{
+        width: 100%;
+    }
+
+    .logo{
+        justify-content: center;
+    }
+
+    .columns{
+        display: block;
+        width: 100%;
+    }
+
+    .column{
+        width: 100%;
+        margin-top: 32px;
+    }
+
+    .social{
+        flex-direction: column;
+    }
+
+    .copyright{
+        width: 100%;
+    }
+
+    .social-links{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px){
+    .nav{
+        display: block;
+    }
+
+    .company{
+        width: 100%;
+    }
+
+    .columns{
+        width: 100%;
+        margin-top: 32px;
+    }
+
+    .column{
+        width: 25%;
+    }
+}
